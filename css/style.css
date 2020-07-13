@@ -7,12 +7,38 @@ h1 {
 font-family: 'Pacifico', cursive;
 font-size: 60;
 text-shadow: 3px 3px 1px rgb(118, 105, 131);
-color: rgb(14, 13, 13)
+color: rgb(14, 13, 13);
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 p {
   font-family: 'Poppins', sans-serif;
 color:rgb(14, 13, 13);
-font-size: 25px
+font-size: 25px;
+animation-duration: 3s;
+animation-name: slidein;
+}
+#cuadrado{
+  width: 50px;
+  height: 50px;
+  background-color: magenta;
+  animation-name: cuadrado;
+  animation-duration: 5s;
+}
+@keyframes cuadrado{
+  0% {background-color: rgb(240, 56, 240);}
+25% {background-color: rgb(204, 37, 219);}
+50% {background-color: rgb(109, 109, 247);}
+100% {background-color: rgb(42, 241, 255);}
 }
 td {
   font-family: 'Poppins', sans-serif;
@@ -24,7 +50,18 @@ td {
     vertical-align: top;
     width: 50%;
 }
-
+.icon-home{
+  font-size: 15px;
+}
+.icon-picture{
+  font-size: 15px;
+}
+.icon-film{
+  font-size: 15px;
+}
+.icon-folder{
+  font-size: 15px;
+}
 td.first {
     border-right: 5px solid #4BB495  ;
 }
