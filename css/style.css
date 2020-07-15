@@ -2,7 +2,11 @@
 {
   padding-top: 1em
 }
-
+/*query pc*/
+@media screen and (min-width: 540px){
+.hamb{
+  display: none;
+}
 h1 {
 font-family: 'Pacifico', cursive;
 font-size: 60;
@@ -65,17 +69,14 @@ td {
 td.first {
     border-right: 5px solid #4BB495  ;
 }
-
 .marcotexto
 {
 font-family: 'Bebas Neue', cursive;
 font-size: 30;
 background-color: dimgrey;
 text-shadow: 3px 3px 1px black;
-color: whitesmoke
-    
+color: whitesmoke   
 }
-
 ul.navbar {
   list-style-type: none;
   padding: 0;
@@ -84,9 +85,7 @@ ul.navbar {
   top: 1em;
   left: 1em;
   width: 9em     
-
 }
-
 ul.navbar li {
   background: rgb(118, 105, 131);
   font-family: 'Fjalla One', sans-serif;
@@ -95,9 +94,6 @@ ul.navbar li {
   float: left;
   border-right: 1em solid red 
 }
-
-
-
 li a {
   display: block;
   color: white;
@@ -105,19 +101,13 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-
 ul.navbar a {
   text-decoration: none }
-
 a:link {
   color: white}
-
 li a:hover {
   background-color: red;
 }
-
-
 .galeria {
   height: calc( 400px + 3em);
   width: 400px;
@@ -125,7 +115,6 @@ li a:hover {
   border: 1px solid #555;
   position: relative;  
 }
-
 .galeria img {
   position: absolute;
   top: 0;
@@ -133,85 +122,26 @@ li a:hover {
   opacity: 0;
   transition: opacity 3s;
 }
-
 .galeria input[type=radio] {
   position: relative;
   bottom: calc(-400px - 1.5em);
   left: .5em;
 }
-
 .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
   opacity: 1;
 }
-
 .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
   opacity: 1;
 }
-
 .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
   opacity: 1;
 }
-
 .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
   opacity: 1;
 }
-
 .galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
   opacity: 1;
 }
-
-
-.contacto{
-    border: 1px solid black;
-    border-radius: 6px;
-    padding: 45px 45px 20px;
-    margin-top: 50px;
-    background-color: black;
-    box-shadow: 0px 5px 10px black, 0 0 0 10px black inset;
-}
-.contacto label{
-    display: block;
-    font-family: 'Abel', sans-serif;
-    color: whitesmoke
-}
-.contacto div{
-    margin-bottom: 15px;
-}
-.contacto input[type='text'], .contacto textarea{
-    padding: 7px 6px;
-    width: 294px;
-    border: 1px solid black;
-    resize: none;
-    box-shadow:0 0 0 3px black;
-    margin: 5px 0;
-}
-.contacto input[type='text']:focus, .contacto textarea:focus{
-    outline: none;
-    box-shadow:0 0 0 3px black;
-}
-.contacto input[type='submit']{
-    border: 1px solid black;
-    box-shadow:0 0 0 3px black;
-    padding: 8px 16px;
-    border-radius: 0px;
-    font-weight: bold;
-    font-family: 'Abel', sans-serif;
-    color: whitesmoke;
-    text-shadow: 1px 1px 0px black;
- 
-    background: rgb(118, 105, 131);
-    
-}
-.contacto input[type='submit']:hover{
-    background: grey;
-   
-}
-.contacto input[type='submit']:active{
-    background: rgb(118, 105, 131);
-   
-}
-
-
 .sticky-container{
     padding:0px;
     margin:0px;
@@ -256,10 +186,24 @@ li a:hover {
 .sticky li p a:hover{
     text-decoration:underline;
 }
-
-
 footer {
   font-family: 'Poppins', sans-serif;
 color:rgb(14, 13, 13);
 font-size: 25px;
+}
+}
+/*query móvil*/
+@media screen and (min-width: 320px){
+  .hamb{
+    display: block;
+    width: 44px;
+    height: auto;
+  }
+  .navbar{
+    display: flexbox;
+  }
+  li{
+    display: flexbox;
+
+  }
 }
